@@ -9,7 +9,7 @@ public class L59_破解闯关密码 {
             @Override
             public int compare(String o1, String o2) {
 
-                return  (o1 + o2).compareTo(o2 + o1);;
+                return  (o1 + o2).compareTo(o2 + o1);
             }
         }
         public String crackPassword(int[] password) {
