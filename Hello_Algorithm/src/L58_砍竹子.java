@@ -6,7 +6,7 @@ import java.util.Queue;
 这个是错的
  */
 public class L58_砍竹子 {
-    class Solution {
+/*    class Solution {
         public int cuttingBamboo(int bamboo_len) {
             if (bamboo_len == 0 || bamboo_len == 1) return 0;
             else if (bamboo_len == 2) return 1;
@@ -46,7 +46,19 @@ public class L58_砍竹子 {
             }
             return ans;
         }
+    }*/
+class Solution {
+    public int cuttingBamboo(int bamboo_len) {
+        if (bamboo_len <= 3){
+            return bamboo_len - 1;
+        }
+        else {
+            if (bamboo_len % 3 == 0) return (int) Math.pow(3, bamboo_len / 3);
+            else if (bamboo_len % 3 == 1) return (int) Math.pow(3, bamboo_len / 3 - 1)  * 4;
+            else  return (int) Math.pow(3, bamboo_len / 3)  * 2;
+        }
     }
+}
 
     public static void main(String[] args) {
         L58_砍竹子 out = new L58_砍竹子();
