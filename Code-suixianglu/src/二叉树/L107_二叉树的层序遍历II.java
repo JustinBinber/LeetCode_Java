@@ -1,8 +1,5 @@
 package 二叉树;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class L107_二叉树的层序遍历II {
 
 
@@ -19,9 +16,5 @@ public class L107_二叉树的层序遍历II {
         }
     }
 
-    class Solution {
-        public List<List<Integer>> levelOrderBottom(TreeNode root) {
-            ArrayList<Object> list = new ArrayList<>();
-        }
-    }
+
 }
