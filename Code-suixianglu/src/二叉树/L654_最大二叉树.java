@@ -29,6 +29,7 @@ public class L654_最大二叉树 {
 //                else root.right = new TreeNode(nums[left]);
                 return;
             }
+
             if (left <= max_idx - 1){
                 int lmax = findMax(nums, left, max_idx - 1);
                 TreeNode lroot = new TreeNode(nums[lmax]);
