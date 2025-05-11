@@ -31,7 +31,6 @@ public class L416_分割等和子集 {
             if (danamic[target][nums.length - 1] == target) return true;
             return false;
 
-
         }
     }
 
